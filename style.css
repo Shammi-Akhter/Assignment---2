@@ -12,7 +12,9 @@
     width: 1200px;
     margin: auto;
 }
-
+.menu{
+    display: none;
+}
 .nav {
     justify-content: space-between;
     align-items: center;
@@ -344,8 +346,12 @@ background-color: rgba(93, 88, 240, 1);
 
 
     }
-
+.menu{
+    display: block;
+    
+}
     .banner {
+        width: 100%;
         flex-direction: column-reverse;
 
     }
