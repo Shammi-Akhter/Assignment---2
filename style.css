@@ -1,10 +1,15 @@
 .display-flex{
     display: flex;
 }
+.font{
+    font-family: "Quicksand", serif;
+}
 /* Nav  */
 .nav{
     justify-content: space-between;
     align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 .nav-title, .nav-link{
 justify-content: center;
@@ -16,9 +21,111 @@ nav ul li{
 }
 .list{
     gap: 80px;
+    font-size: 20px;
+    font-weight: 700;
 }
 .nav-title{
     gap: 30px;
     font-size: 25px;
     font-weight: 600;
+}
+.nav-button{
+    background-color: #FEA301;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    border-radius: 9px;
+    width: 160px;
+    height: 50px;
+}
+/* Banner styles */
+.banner{
+     justify-content: space-evenly;
+}
+.banner-left{
+    padding-top: 70px;
+}
+    
+.banner-heading{
+    font-size: 56px;
+    font-weight: bold;
+}
+.banner-p{
+    font-size: 20px;
+    
+}
+.banner-btn{
+    font-size: 17px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    width: 150px;
+    height: 40px;
+}
+/* standard curriculum */
+.card-parent{
+    justify-content:center;
+    gap: 35px;
+
+}
+.card{
+    text-align: center;
+   
+    border-radius: 15px;
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Inner shadow */
+    
+  
+}
+.standard-h{
+    font-size: 46px;
+    font-weight: bold;
+    text-align: center;
+}
+.card-h{
+    font-size: 25px;
+    font-weight: bold;
+}
+.card-p{
+    font-size: 15px;
+    font-weight: 500;
+    color: #808080;
+}
+.read{
+    font-size: 15px;
+    font-weight: bold;
+}
+/* Next previous icon */
+.next-page{
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom:80px ;
+}
+/* Our story */
+.story-right{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+/* Responsive media query*/
+/* small devices */
+
+@media screen and (max-width: 576px){
+    .list, .nav-button, .nav-h{
+display: none;
+    }
+    .nav{
+        margin: 0px;
+        
+    }
+    .banner{
+        flex-direction: column-reverse;
+        
+    }
+    .banner-left{
+        padding-top: 0px;
+        text-align: center;
+    }
 }
