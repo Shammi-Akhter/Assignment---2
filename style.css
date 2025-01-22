@@ -181,8 +181,11 @@ nav ul li {
     justify-content: center;
     align-items: center;
     margin-top: 60px;
-    /* margin-bottom: 80px; */
     gap: 10px;
+    
+}
+.next-page:hover img{
+    filter: grayscale(100%);
 }
 
 /* Our story */
@@ -362,9 +365,6 @@ nav ul li {
     gap: 5px;
 }
 
-/* .footer-list ul li{
-    list-style: none;
-} */
 .footer-list {
     display: flex;
     flex-direction: column;
