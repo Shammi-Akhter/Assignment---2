@@ -1,4 +1,7 @@
-
+body{
+    margin: 0;
+    padding: 0;
+}
         /* shared styles */
 .display-flex {
     display: flex;
@@ -14,6 +17,7 @@
     width: 1200px;
     margin: auto;
 }
+
 
 .menu {
     display: none;
@@ -428,8 +432,8 @@ nav ul li {
     }
 
     .nav-main {
-        padding-bottom: 10px;
-        border-bottom: 1px solid red;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #FEA301;
     }
 
     .list,
@@ -441,6 +445,9 @@ nav ul li {
     .nav {
         margin: 0px;
     }
+
+  
+    
 
     .nav-container {
       
@@ -561,12 +568,12 @@ nav ul li {
     }
    
   
-    .footer-container{
+     .footer-container{
         width: 100%;
         
        
     
-    }
+    } 
     .footer-content{
         flex-direction: column;
     }
