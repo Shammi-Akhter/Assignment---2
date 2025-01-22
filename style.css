@@ -184,8 +184,9 @@ nav ul li {
     gap: 10px;
     
 }
-.next-page:hover img{
+.next-page img:hover{
     filter: grayscale(100%);
+    cursor: pointer;
 }
 
 /* Our story */
