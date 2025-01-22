@@ -456,9 +456,16 @@ nav ul li {
        
     }
 
-    .story-right {
-      
+    .banner-heading {
+        font-size: 30px;
+        font-weight: bold;
     }
+    
+    .banner-p {
+        font-size: 14px;
+
+    }
+    
 
     .text-padding {
         padding-left: 10px;
@@ -503,6 +510,7 @@ nav ul li {
 
     .menu {
         display: block;
+        
     }
 
     .banner {
@@ -541,8 +549,7 @@ nav ul li {
         flex-direction: column;
 
         align-items: center;
-        width: 400px;
-    }
+ }
 
     .standard-content {
 
