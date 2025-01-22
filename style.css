@@ -1,25 +1,4 @@
-/* marque Text styles */
 
-        .marque-text {
-            width: 100%;
-            font-size: 30px;
-            font-weight: 700;
-            color: rgba(255, 0, 0, 0.644);
-            text-shadow:2px 2px 5px rgba(243, 227, 9, 0.87);
-            overflow: hidden;
-            white-space: nowrap;
-            box-sizing: border-box;
-            animation: scroll-left 100s linear infinite;
-        }
-
-        @keyframes scroll-left {
-            from {
-                transform: translateX(100%);
-            }
-            to {
-                transform: translateX(-100%);
-            }
-        }
         /* shared styles */
 .display-flex {
     display: flex;
@@ -144,7 +123,7 @@ nav ul li {
 .card-3 {
     text-align: center;
     border-radius: 15px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     width: 370px;
     height: 440px;
     padding-top: 50px;
@@ -214,7 +193,18 @@ nav ul li {
     background-size: contain;
     background-position: center;
     padding: 60px;
+    padding-bottom: 0px;
 
+}
+
+.image-story{
+    width: 290px;
+    height: 175px;
+}
+
+.story-container{
+    width: 1158px;
+    margin: auto;
 }
 
 .story {
@@ -233,6 +223,7 @@ nav ul li {
 .text-padding {
     padding-left: 33px;
     padding-top: 30px;
+    
 
 }
 
@@ -347,10 +338,19 @@ nav ul li {
 }
 
 .footer {
-    justify-content: space-evenly;
+   
     background-color: #01ACFD;
-    padding: 123px 140px;
+    padding: 40px 0;
     color: white;
+}
+.footer-container{
+    width: 1158px;
+    margin: auto;
+  
+
+}
+.footer-content{
+    justify-content: space-between;
 }
 
 .footer-left {
@@ -382,7 +382,42 @@ nav ul li {
 .keep {
     font-size: 24px;
     font-weight: bold;
+    padding-left: 10px;
 }
+
+
+/* marque Text styles */
+
+.marque-text-container {
+    width: 1158px;
+    margin: auto;
+    height: 50px; 
+    overflow: hidden; 
+    position: relative; 
+    background: #f9f9f9; 
+}
+
+.marque-text {
+    position: absolute; 
+    top: 0;
+    left: 100%; 
+    font-size: 30px;
+    font-weight: 700;
+    color: rgba(255, 0, 0, 0.644);
+    text-shadow: 2px 2px 5px rgba(243, 227, 9, 0.87);
+    white-space: nowrap; 
+    animation: scroll-left 20s linear infinite; 
+}
+
+@keyframes scroll-left {
+    from {
+        transform: translateX(0); 
+    }
+    to {
+        transform: translateX(-100%); 
+    }
+}
+
 
 /* Responsive media query*/
 /* small devices */
@@ -407,11 +442,56 @@ nav ul li {
         margin: 0px;
     }
 
-    .nav {
-        width: 400px;
+    .nav-container {
+      
+        width: 100%;
+       
     }
 
-    .story-right {}
+    .story-right {
+      
+    }
+
+    .text-padding {
+        padding-left: 10px;
+        padding-top: 10px;
+        font-size: 12px;
+    
+    }
+
+    .story-1-btn,
+.story-2-btn {
+
+   
+  
+    font-size: 8px;
+   
+  
+    width: 100px;
+    height: 20px;
+   
+    top: 92px;
+    
+}
+.story-3-btn,
+.story-4-btn {
+    
+    font-size: 8px;
+   
+    width: 100px;
+    height: 20px;
+    top:92px;
+   
+}
+
+
+
+
+    .image-story{
+        width: 170px;
+        height: 102px;
+    }
+    
 
     .menu {
         display: block;
@@ -442,6 +522,12 @@ nav ul li {
     .story {
         font-size: 26px;
     }
+    .story-container{
+        width: 100%;
+        
+    }
+
+    
 
  .card-parent {
         flex-direction: column;
@@ -450,6 +536,14 @@ nav ul li {
         width: 400px;
     }
 
+    .standard-content {
+
+        width: 100%;
+      
+    
+    }
+    
+
     .standard-h {
         text-align: center;
         width: 400px;
@@ -457,12 +551,27 @@ nav ul li {
 
     }
 
-    .footer {
+    .marque-text-container {
+        width: 100%;
+        height: 26px;
+       
+    }
+    .marque-text {
+        font-size: 16px;
+    }
+   
+  
+    .footer-container{
+        width: 100%;
+        
+       
+    
+    }
+    .footer-content{
         flex-direction: column;
-        padding-left: 15px;
+    }
+    .footer-list {
+        margin-left: -30px;
     }
 }
 
-.footer-list {
-    text-align: left;
-}
